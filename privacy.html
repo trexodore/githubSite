@@ -7,7 +7,7 @@
     <style>
         body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; }
         .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1, h2 { color: #0056b3; }
+        h1, h2, h3 { color: #0056b3; }
         h1 { text-align: center; }
         p, ul { margin-bottom: 15px; }
         ul { padding-left: 20px; }
@@ -26,32 +26,60 @@
         <h2>Information We Collect</h2>
         <p>We collect information to provide and improve our App. The types of information we may collect include:</p>
         <ul>
-            <li><strong>Account Information:</strong> When you create an account, we, through our authentication provider Firebase (a Google service), may collect your email address and a user identifier. This information is used solely for account creation, authentication, and management within the App.</li>
-            <li><strong>Usage Information (Non-Personal):</strong> We may collect non-personal information about your interaction with the App, such as features used and crash reports, to help us improve functionality and stability. This data is typically aggregated and anonymized.</li>
+            <li><strong>Account Information:</strong> When you create an account, we, through our authentication provider Firebase (a Google service), may collect your email address and a user identifier (User ID). This information is used for account creation, authentication, and management within the App.</li>
+            <li><strong>Product Interaction Data:</strong> To enhance your learning experience and app functionality, we collect information about how you interact with the App. This includes your progress in practice sessions (e.g., characters learned, scores), user-selected preferences and settings (e.g., learning goals, notification preferences), and features you use or content you engage with. This data is linked to your User ID to personalize your experience and track your learning.</li>
+            <li><strong>Usage Analytics Data:</strong> We may collect broader analytics data about how users access and use the App, such as feature popularity, session duration, general usage patterns, device type/OS version. This data may be collected through our own systems or through third-party analytics providers like Google Analytics. This data is used to understand user behavior, improve app design, identify areas for new features, and enhance overall app performance and user experience.</li>
+            <li><strong>Diagnostics - Crash Data:</strong> If the App encounters an error or crashes, we may collect diagnostic information to help us identify and fix bugs. This data can include device type, operating system version, and the state of the App at the time of the crash. This may be facilitated through services like Firebase Crashlytics.</li>
+            <li><strong>Diagnostics - Performance Data (Optional - Review and remove if not applicable):</strong> We may collect performance data, such as app launch times and network request latencies, to monitor and improve the App's performance. This may be facilitated through services like Firebase Performance Monitoring.</li>
+            <li><strong>Device Information for Push Notifications (If applicable):</strong> If you opt-in to receive push notifications, we may collect a device token to send you relevant updates, reminders, or other App-related communications.</li>
+            <li><strong>Advertising Identifiers and Data:</strong> We may work with third-party advertising partners, such as Facebook (Meta), and analytics providers, like Google Analytics. These partners may use cookies, pixels, SDKs (Software Development Kits), and similar technologies to collect or receive information from our App and elsewhere on the internet. This information can include your device's advertising identifier (such as Apple's IDFA, if you have given permission), IP address, device type, operating system, app usage, and interactions. This data is used for purposes such as measuring ad effectiveness, providing more relevant advertising (including for remarketing purposes), and for analytics.</li>
         </ul>
 
         <h2>How We Use Your Information</h2>
         <p>We use the information we collect for purposes such as:</p>
         <ul>
-            <li>Providing and maintaining the App's functionality.</li>
+            <li>Providing and maintaining the App's functionality, your learning progress, and personalized settings.</li>
             <li>Authenticating users and managing user accounts.</li>
+            <li>Personalizing your learning experience based on your interaction data and preferences.</li>
             <li>Responding to your support requests and communications.</li>
-            <li>Improving the App's performance, features, and user experience.</li>
+            <li>Analyzing usage trends and patterns (including through services like Google Analytics) to understand how our App is used, identify popular features, and discover areas for improvement or new development.</li>
+            <li>Improving the App's performance, features, stability, and user experience.</li>
+            <li>Sending you push notifications with updates, reminders, or other information related to the App, if you have opted-in to receive them.</li>
+            <li>To deliver, personalize, and measure the effectiveness of advertising, including showing you ads for our App on other websites and platforms (remarketing), and to help our advertising partners show you more relevant ads based on your interests.</li>
             <li>Complying with legal obligations.</li>
         </ul>
 
         <h2>Sharing Your Information</h2>
-        <p>We do not sell your personal information. We may share information under the following circumstances:</p>
+        <p>We do not sell your personal information in the conventional sense (i.e., for monetary gain). However, the use of third-party advertising and analytics services may involve the sharing of certain data as described below. We may share information under the following circumstances:</p>
         <ul>
-            <li><strong>With Service Providers:</strong> We use Firebase for authentication. Firebase's use of your information is governed by Google's Privacy Policy. You can learn more about Firebase's privacy practices here: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>.</li>
+            <li><strong>With Service Providers:</strong> We use Firebase (a Google service) for authentication, and may use other Firebase services like Crashlytics, Performance Monitoring, or Analytics. Firebase's use of your information is governed by Google's Privacy Policy.</li>
+            <li><strong>With Third-Party Analytics and Advertising Partners:</strong> As mentioned, we may share or allow the collection of information (such as advertising identifiers, IP address, and usage data) by third-party analytics providers (like Google Analytics) and advertising partners (like Facebook/Meta) through the use of SDKs, pixels, and similar technologies. These partners may use this information to provide their services, measure ad performance, and show you targeted advertisements.
+                <ul>
+                    <li>Google Analytics: To understand how our App is used. Learn more about Google's practices at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a>.</li>
+                    <li>Facebook (Meta): For advertising and measurement services. Learn more about Facebook's practices and your choices at <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/about/privacy/</a> and <a href="https://www.facebook.com/ads/preferences/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/ads/preferences/</a>.</li>
+                </ul>
+                These third parties' use of information is governed by their own privacy policies.</li>
             <li><strong>For Legal Reasons:</strong> We may disclose information if required by law or in response to valid requests by public authorities.</li>
         </ul>
+
+        <h2>Cookies, Tracking Technologies, and Advertising</h2>
+        <p>Our App and our third-party partners (e.g., Google Analytics, Facebook) may use various technologies to collect information automatically, including advertising identifiers, SDKs, pixels, and similar technologies. These technologies help us analyze how our App is used, personalize content, deliver and measure advertising, and provide a better user experience.</p>
+        <p>For example, Facebook Pixel may be used to understand the actions you take on our App and to show you ads for KanaConquest on Facebook or other platforms. Google Analytics helps us understand usage patterns to improve the App.</p>
+
+        <h2>Your Choices and Opt-Outs</h2>
+        <p>You have certain choices regarding the information we collect and how it's used, particularly for advertising:</p>
+        <ul>
+            <li><strong>Device-Level Ad Tracking Choices:</strong> You can limit ad tracking on your iOS device by enabling the "Limit Ad Tracking" (LAT) setting in your device's privacy settings (Settings > Privacy > Tracking or Advertising). This will limit the use of your device's advertising identifier for interest-based advertising.</li>
+            <li><strong>Third-Party Ad Platforms:</strong> You can often control your ad preferences directly on platforms like Facebook through their ad settings. Please refer to the links provided in the "Sharing Your Information" section for more details on managing your preferences with Google and Facebook.</li>
+            <li><strong>Push Notifications:</strong> You can opt-out of receiving push notifications by changing the notification settings on your device or within the App, if such settings are provided.</li>
+        </ul>
+        <p>Please note that opting out of interest-based advertising does not mean you will no longer see ads, but the ads you see may be less relevant to your interests.</p>
         
         <h2>Data Security</h2>
         <p>We take reasonable measures to help protect your information from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction. However, no internet or email transmission is ever fully secure or error-free.</p>
 
         <h2>Children's Privacy</h2>
-        <p>Our App is not directed to individuals under the age of 13 (or the relevant age in your jurisdiction). We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal information, we will take steps to delete such information.</p>
+        <p>Our App is not directed to individuals under the age of 13 (or the relevant age in your jurisdiction). We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal information, we will take steps to delete such information. If you are a parent or guardian and believe your child has provided us with information without your consent, please contact us.</p>
 
         <h2>Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
